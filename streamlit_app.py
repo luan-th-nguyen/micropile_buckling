@@ -19,7 +19,7 @@ A, I, EI, fyA = get_cross_section_parameters_circular(d, D, E, fy)
 st.write('A = {0:.2f} [mm^2]; I = {1:.2f} [cm^4]; EI = {2:.2f} [kNm^2]; fyA = {3:.2f} [kN]\n\n'.format(A, I, EI, fyA))
 
 # Selection for p-y cur2e
-st.header('Maximal mobilized later displacement and stress (soil-pile interaction)')
+st.header('Maximal mobilized lateral displacement and stress (soil-pile interaction)')
 col1, col2, col3 = st.columns(3)
 c_u = float(col1.text_input('Undrained shear strength [kN/m^2]', 25.0))
 w_f = get_w_f_elastoplastic_eq1(D, c_u)
